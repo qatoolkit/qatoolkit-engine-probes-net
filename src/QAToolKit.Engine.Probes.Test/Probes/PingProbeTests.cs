@@ -20,17 +20,20 @@ namespace QAToolKit.Engine.Probes.Test.Probes
             _logger = loggerFactory.CreateLogger<PingProbeTests>();
         }
 
-        [Fact]
+        [IgnoreOnGithubFact]
         public async Task PingHostNameTest_Success()
         {
             var pinger = new PingProbe("52.217.36.203", 500);
             var result = await pinger.Execute();
 
-            _logger.LogInformation($"Success: {result.Success}");
-            _logger.LogInformation($"ReplyAddress: {result.ReplyAddress}");
-            _logger.LogInformation($"Time: {result.RoundTripTime}");
-            _logger.LogInformation($"TTL: {result.Ttl}");
-            _logger.LogInformation($"BufferLength: {result.BufferLength}");
+            Assert.Equal(IPStatus.Success, result.Success);
+        }
+
+        [IgnoreOnGithubFact]
+        public async Task PingParseIPTest_Success()
+        {
+            var pinger = new PingProbe(IPAddress.Parse("52.217.36.203"), 500);
+            var result = await pinger.Execute();
 
             Assert.Equal(IPStatus.Success, result.Success);
         }
