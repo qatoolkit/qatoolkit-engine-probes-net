@@ -14,7 +14,7 @@ namespace QAToolKit.Engine.Probes.Probes
     {
         private readonly string _address;
         private readonly string Data = "0000000000000000000000000000000";
-        private readonly int Timeout = 120;
+        private readonly int _timeout = 120;
 
         /// <summary>
         /// Ping probe constructor
@@ -28,10 +28,32 @@ namespace QAToolKit.Engine.Probes.Probes
         /// <summary>
         /// Ping probe constructor
         /// </summary>
+        /// <param name="hostName"></param>
+        /// <param name="timeout"></param>
+        public PingProbe(string hostName, int timeout)
+        {
+            _address = hostName;
+            _timeout = timeout;
+        }
+
+        /// <summary>
+        /// Ping probe constructor
+        /// </summary>
         /// <param name="ipAddress"></param>
         public PingProbe(IPAddress ipAddress)
         {
             _address = ipAddress.ToString();
+        }
+
+        /// <summary>
+        /// Ping probe constructor
+        /// </summary>
+        /// <param name="ipAddress"></param>
+        /// <param name="timeout"></param>
+        public PingProbe(IPAddress ipAddress, int timeout)
+        {
+            _address = ipAddress.ToString();
+            _timeout = timeout;
         }
 
         /// <summary>
@@ -48,7 +70,7 @@ namespace QAToolKit.Engine.Probes.Probes
                 };
 
                 byte[] buffer = Encoding.ASCII.GetBytes(Data);
-                PingReply reply = await pingSender.SendPingAsync(_address, Timeout, buffer, options);
+                PingReply reply = await pingSender.SendPingAsync(_address, _timeout, buffer, options);
 
                 return new PingResult(reply.Status, reply.Address.ToString(), reply.RoundtripTime, reply.Options?.Ttl, reply.Buffer.Length);
             }
