@@ -23,7 +23,7 @@ namespace QAToolKit.Engine.Probes.Test.Probes
         [Fact]
         public async Task PingHostNameTest_Success()
         {
-            var pinger = new PingProbe("github.com", 500);
+            var pinger = new PingProbe("52.217.36.203", 500);
             var result = await pinger.Execute();
 
             _logger.LogInformation($"Success: {result.Success}");
