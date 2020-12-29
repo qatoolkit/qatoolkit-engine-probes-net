@@ -88,7 +88,7 @@ If you want to follow the QAToolKit convention, you can create your probe by imp
 
 Below we create a `MyProbe` that implements `IProbe<string>` with single method Execute().
 
-```
+```csharp
 public class MyProbe : IProbe<string>
 {
     public Task<string> Execute()
