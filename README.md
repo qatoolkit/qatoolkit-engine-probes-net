@@ -1,8 +1,9 @@
 # QAToolKit Engine Probes library
-[![Build .NET Library](https://github.com/qatoolkit/qatoolkit-engine-probes-net/workflows/.NET%20Core/badge.svg?branch=main)](https://github.com/qatoolkit/qatoolkit-engine-probes-net/actions)
+[![Build .NET Library](https://github.com/qatoolkit/qatoolkit-engine-probes-net/workflows/Build%20.NET%20Library/badge.svg)](https://github.com/qatoolkit/qatoolkit-engine-probes-net/actions)
 [![CodeQL](https://github.com/qatoolkit/qatoolkit-engine-probes-net/workflows/CodeQL%20Analyze/badge.svg)](https://github.com/qatoolkit/qatoolkit-engine-probes-net/security/code-scanning)
 [![Sonarcloud Quality gate](https://github.com/qatoolkit/qatoolkit-engine-probes-net/workflows/Sonarqube%20Analyze/badge.svg)](https://sonarcloud.io/dashboard?id=qatoolkit_qatoolkit-engine-probes-net)
 [![NuGet package](https://img.shields.io/nuget/v/QAToolKit.Engine.Probes?label=QAToolKit.Engine.Probes)](https://www.nuget.org/packages/QAToolKit.Engine.Probes/)
+[![Discord](https://img.shields.io/discord/787220825127780354?color=%23267CB9&label=Discord%20chat)](https://discord.com/invite/tu3WDV5Z?utm_source=Discord%20Widget&utm_medium=Connect)
 
 ## Description
 `QAToolKit.Engine.Probes` is a .NET Standard 2.1 library that contains network probes to test servers/services with protocols like HTTP, TCP, ICMP (Ping).
@@ -14,6 +15,10 @@ You can quickly write tests or protocols to send `PING`, send `TCP messages`, or
 Then get the results and process them further depending on your needs.
 
 Supported .NET frameworks and standards: `netstandard2.0`, `netstandard2.1`, `netcoreapp3.1`, `net5.0`
+
+Get in touch with me on:
+
+[![Discord](https://img.shields.io/discord/787220825127780354?color=%23267CB9&label=Discord%20chat)](https://discord.com/invite/tu3WDV5Z?utm_source=Discord%20Widget&utm_medium=Connect)
 
 ### 1. Ping Probes
 
