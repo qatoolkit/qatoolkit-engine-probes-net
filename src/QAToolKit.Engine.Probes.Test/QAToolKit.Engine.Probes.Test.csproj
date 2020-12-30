@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+	<TargetFrameworks>net5.0</TargetFrameworks>
 	<LangVersion>latest</LangVersion>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -27,24 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QAToolKit.Engine.Probes\QAToolKit.Engine.Probes.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Assets\AddBike.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\addPet.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\GetAllBikes.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\getPetByIdAndStatus.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\getPetById.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
