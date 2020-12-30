@@ -14,7 +14,7 @@ name: "CodeQL Analyze"
 
 on:
   pull_request:
-    branches: [ develop, main ]
+    branches: [ develop ]
   schedule:
     - cron: '36 12 * * 3'
 
