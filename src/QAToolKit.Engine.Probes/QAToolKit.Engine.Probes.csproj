@@ -32,8 +32,4 @@
 		<None Include="..\..\LICENSE" Pack="true" PackagePath="" />
 		<None Include="..\..\README.md" Pack="false" PackagePath="" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-	</ItemGroup>
 </Project>
