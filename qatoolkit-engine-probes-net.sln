@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QAToolKit.Engine.Probes", "src\QAToolKit.Engine.Probes\QAToolKit.Engine.Probes.csproj", "{5A2191E1-6682-437F-8ED2-DE9324BFC4F4}"
 EndProject
