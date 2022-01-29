@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net5.0</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net6.0</TargetFrameworks>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<LangVersion>latest</LangVersion>
 		<ProjectGuid>4a1e27ea-a11e-4eef-8de3-12fb81975448</ProjectGuid>
@@ -19,7 +19,7 @@
 		<PackageProjectUrl>https://github.com/qatoolkit/qatoolkit-engine-probes-net</PackageProjectUrl>
 		<PackageIcon>qatoolkit-64x64.png</PackageIcon>
 		<RepositoryUrl>https://github.com/qatoolkit/qatoolkit-engine-probes-net</RepositoryUrl>
-		<PackageTags>qatoolkit-engine-probes-net;.net;c#;f#;dotnet;netstandard;net5</PackageTags>
+		<PackageTags>qatoolkit-engine-probes-net;.net;c#;f#;dotnet;netstandard;net6</PackageTags>
 		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>
 	
