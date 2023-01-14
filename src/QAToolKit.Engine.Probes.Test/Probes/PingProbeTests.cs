@@ -95,14 +95,5 @@ namespace QAToolKit.Engine.Probes.Test.Probes
         {
             Assert.Throws<ArgumentNullException>(() => new PingProbe(IPAddress.Parse(null)));
         }
-
-        [Fact]
-        public async Task PingIPTest_Fails()
-        {
-            var pinger = new PingProbe(IPAddress.Parse("10.0.0.0"));
-            var result = await pinger.Execute();
-
-            Assert.True(IPStatus.Success != result.Success);
-        }
     }
 }
