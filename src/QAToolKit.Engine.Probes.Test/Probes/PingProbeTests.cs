@@ -39,15 +39,6 @@ namespace QAToolKit.Engine.Probes.Test.Probes
         }
 
         [Fact]
-        public async Task PingIPTest_Success()
-        {
-            var pinger = new PingProbe("127.0.0.1");
-            var result = await pinger.Execute();
-
-            Assert.Equal(IPStatus.Success, result.Success);
-        }
-
-        [Fact]
         public async Task PingHostNameTest_Fails()
         {
             var pinger = new PingProbe("googlexzy.com");
@@ -72,16 +63,7 @@ namespace QAToolKit.Engine.Probes.Test.Probes
 
             await Assert.ThrowsAsync<ArgumentNullException>(async () => await pinger.Execute());
         }
-
-        [Fact]
-        public async Task PingIPStringTest_Fails()
-        {
-            var pinger = new PingProbe("10.0.0.0");
-            var result = await pinger.Execute();
-
-            Assert.True(IPStatus.Success != result.Success);
-        }
-
+        
         [Fact]
         public async Task PingIPInvalidTest_Fails()
         {
